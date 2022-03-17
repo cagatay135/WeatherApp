@@ -18,7 +18,6 @@ module.exports = (sequelize, DataTypes) => {
         current_weather: {
             type: DataTypes.DECIMAL(3,1),
             allowNull: false,
-            unique: true,
         }
       },
       {

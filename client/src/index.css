@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --background: red;
+  --text-primary: black;
+  --text-secondary: royalblue;
+  --accent: purple;
+}
+
+[data-theme='dark'] {
+  background-color: #1D1C4E;
+  color: white;
+  --background: red;
+  --fs-4: {
+    color: white;
+  }
+  --text-primary: white;
+  --text-primary: red;
+  --text-secondary: grey;
+  --accent: darkred;
+}
+
+[data-theme='dark'] .fs-4{
+  color: white;
+}
+
+[data-theme='dark'] h1{
+  color: black;
+}
+
+[data-theme='dark'] .text-degree{
+  color: white;
+}
+
+

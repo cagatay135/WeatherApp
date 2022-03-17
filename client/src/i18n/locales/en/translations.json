@@ -1,0 +1,10 @@
+{
+    "forecast": "Weather Forecast",
+    "today": "Today",
+    "search": "Enter the Location",
+    "wind": "Wind",
+    "uv_index": "UV Index",
+    "temperature": "Temperature",
+    "humidity": "Humidity",
+    "created": "Created by"
+  }
