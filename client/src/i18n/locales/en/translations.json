@@ -6,5 +6,7 @@
     "uv_index": "UV Index",
     "temperature": "Temperature",
     "humidity": "Humidity",
-    "created": "Created by"
+    "created": "Created by",
+    "english": "English",
+    "turkish": "Turkish"
   }

@@ -14,7 +14,7 @@ const sequelize = new Sequelize(
   }
 );
 
-// Test Database
+// Connect database
 sequelize
   .authenticate()
   .then(() => {
@@ -29,22 +29,19 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-// Model route
+// Models route
 db.location = require("./Location")(sequelize, DataTypes);
 
-// DB Sync and create Stored Procedure
+// DB Sync
 db.sequelize
   .sync({
     force: false,
   })
   .then(() => {
-      console.log("DB Sync Success")
-    })
-    .catch((err) => {
-        console.log("DB Sync Fail")
-    });
-
-
-
+    console.log("DB Sync Success");
+  })
+  .catch((err) => {
+    console.log("DB Sync Fail");
+  });
 
 module.exports = db;

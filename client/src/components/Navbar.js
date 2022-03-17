@@ -19,13 +19,13 @@ function Navbar(props) {
         <span className="fs-4 mx-2">{t('forecast')}</span>
       </a>
       <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <div class="wrapper">
-        <div class="toggle">
-          <input class="toggle-input" type="checkbox" onClick={()=> props.switchTheme()}/>
-          <div class="toggle-bg"></div>
-          <div class="toggle-switch">
-            <div class="toggle-switch-figure"></div>
-            <div class="toggle-switch-figureAlt"></div>
+        <div className="wrapper">
+        <div className="toggle">
+          <input className="toggle-input" type="checkbox" checked={props.theme=="dark" ? true : false} onChange={()=> props.switchTheme()}/>
+          <div className="toggle-bg"></div>
+          <div className="toggle-switch">
+            <div className="toggle-switch-figure"></div>
+            <div className="toggle-switch-figureAlt"></div>
           </div>  
         </div>
       </div>
@@ -33,8 +33,8 @@ function Navbar(props) {
     </div>
     <div className='text-center mb-3'>
       <select className="selectpicker" data-width="fit" onChange={changeLanguage}>
-            <option value='en'>English</option>
-            <option value='tr'>Turkish</option>
+            <option value='en'>{t('english')}</option>
+            <option value='tr'>{t('turkish')}</option>
       </select>
     </div>
     

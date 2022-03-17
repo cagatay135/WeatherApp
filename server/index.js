@@ -1,17 +1,21 @@
-// create express app
 const express = require("express");
-const app = express();
-var cors = require('cors');
+const cors = require("cors");
 
 const config = require("./config/config");
+const db = require("./models/database");
 
 const weatherRoute = require("./routes/weatherRoute");
 
+// Create express app
+const app = express();
+
+// Middleware
 app.use(cors());
 
-//create router
+// Routes path
 app.use("", weatherRoute);
-  
+
+// Listen for requests
 app.listen(config.server.port, () => {
-    console.log(`Example app listening on port ${config.server.port}`)
-  })
+  console.log(`Example app listening on port ${config.server.port}`);
+});

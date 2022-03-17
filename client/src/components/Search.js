@@ -31,7 +31,6 @@ function Search() {
       axios.get('http://localhost:3000/weather/' , {params: {latitude: latitude,longitude: longitude}})
       .then(function (response) {
         const result = response.data;
-        console.log(result)
           setWeatherInfo(result);
           setShowMessage(true)
       }
@@ -50,7 +49,7 @@ function Search() {
   return (
     <div>
       <Container className="pricing-header p-3 pb-md-4 mx-auto text-center">
-          <form class="form-inline my-2 my-lg-0" onSubmit={getWeather}>
+          <form className="form-inline my-2 my-lg-0" onSubmit={getWeather}>
           <input className="form-control mr-sm-2" type="search" placeholder={t('search')} aria-label="Search" value={location} onChange={didChange}/>
           </form>
       {weatherInfo &&
@@ -78,13 +77,13 @@ function Search() {
             <h1 className="display-4 fw-normal text-degree">{weatherInfo && weatherInfo.current.temperature}&deg;</h1>
             <p className="fs-5 text-muted">{weatherInfo && weatherInfo.current.weather_description}</p>
           </div>
-          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-          <div class="col-md-6  col-sm-6">
-              <div class="card mb-4 rounded-5 shadow-sm">
-                <div class="card-body">
+          <div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div className="col-md-6  col-sm-6">
+              <div className="card mb-4 rounded-5 shadow-sm">
+                <div className="card-body">
               <div className="row">
                 <div className="col-md-4 col-sm-6 align-self-center">
-                  <i class="bi bi-wind text-black" style={{fontSize:"2rem"}}></i>
+                  <i className="bi bi-wind text-black" style={{fontSize:"2rem"}}></i>
                 </div>
                 <div className="col-md-8 col-sm-6">
                 <p className="fs-6 text-muted">{t('wind')}</p>
@@ -94,12 +93,12 @@ function Search() {
                 </div>
               </div>
             </div>
-            <div class="col-md-6  col-sm-6">
-              <div class="card mb-4 rounded-5 shadow-sm">
-                <div class="card-body">
+            <div className="col-md-6  col-xs-6">
+              <div className="card mb-4 rounded-5 shadow-sm">
+                <div className="card-body">
               <div className="row">
                 <div className="col-md-4 col-sm-6 align-self-center">
-                  <i class="bi bi-sun text-black" style={{fontSize:"2rem"}}></i>
+                  <i className="bi bi-sun text-black" style={{fontSize:"2rem"}}></i>
                 </div>
                 <div className="col-md-8 col-sm-6">
                 <p className="fs-6 text-muted">{t('uv_index')}</p>
@@ -109,12 +108,12 @@ function Search() {
                 </div>
               </div>
             </div>
-            <div class="col-md-6  col-sm-6">
-              <div class="card mb-4 rounded-5 shadow-sm">
-                <div class="card-body">
+            <div className="col-md-6  col-sm-6">
+              <div className="card mb-4 rounded-5 shadow-sm">
+                <div className="card-body">
               <div className="row">
                 <div className="col-md-4 col-sm-6 align-self-center">
-                  <i class="bi bi-thermometer text-black" style={{fontSize:"2rem"}}></i>
+                  <i className="bi bi-thermometer text-black" style={{fontSize:"2rem"}}></i>
                 </div>
                 <div className="col-md-8 col-sm-6">
                 <p className="fs-6 text-muted">{t('temperature')}</p>
@@ -124,12 +123,12 @@ function Search() {
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-sm-6">
-              <div class="card mb-4 rounded-5 shadow-sm">
-                <div class="card-body">
+            <div className="col-md-6 col-sm-6">
+              <div className="card mb-4 rounded-5 shadow-sm">
+                <div className="card-body">
               <div className="row">
                 <div className="col-md-4 col-sm-6 align-self-center">
-                  <i class="bi bi-droplet text-black" style={{fontSize:"2rem"}}></i>
+                  <i className="bi bi-droplet text-black" style={{fontSize:"2rem"}}></i>
                 </div>
                 <div className="col-md-8 col-sm-6">
                 <p className="fs-6 text-muted">{t('humidity')}</p>
