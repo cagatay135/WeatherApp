@@ -37,7 +37,6 @@
   npm install
   npm start
   ```
-<br>
 
 ### Configration 
 - Server (config/config.json)
