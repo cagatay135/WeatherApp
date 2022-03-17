@@ -8,5 +8,12 @@
     "humidity": "Humidity",
     "created": "Created by",
     "english": "English",
-    "turkish": "Turkish"
+    "turkish": "Turkish",
+    "Partly cloudy": "Partly cloudy",
+    "Light Rain":"Light Rain",
+    "Clear":"Clear",
+    "Sunny":"Sunny",
+    "Mist":"Mist",
+    "Light Rain And Snow Shower" : "Light Rain And Snow Shower",
+    "Fog":"Fog"
   }

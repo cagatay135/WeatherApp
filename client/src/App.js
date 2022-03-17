@@ -1,31 +1,31 @@
-import logo from './logo.svg';
+import Search from "./components/Search";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
-import Search from './components/Search';
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
-
-import useLocalStorage from 'use-local-storage'
-
-import { useState } from 'react';
-import axios from 'axios';
-
-import { useTranslation } from 'react-i18next';
+import useLocalStorage from "use-local-storage";
 
 function App() {
-  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
-  
+  // Theme settings
+  const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  // Local storage settings for theme
+  const [theme, setTheme] = useLocalStorage(
+    "theme",
+    defaultDark ? "dark" : "light"
+  );
+
+  // Theme switch function
   const switchTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
-  }
+    setTheme(theme === "light" ? "dark" : "light");
+  };
 
   return (
     <div data-theme={theme}>
-    <div className="container py-3" >
-      <Navbar theme={theme} switchTheme={switchTheme}/>
-      <Search />
-      <Footer />
-    </div>
+      <div className="container py-3">
+        <Navbar theme={theme} switchTheme={switchTheme} />
+        <Search />
+        <Footer />
+      </div>
     </div>
   );
 }

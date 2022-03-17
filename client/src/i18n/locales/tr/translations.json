@@ -8,5 +8,12 @@
     "humidity": "Nem",
     "created": "Oluşturan",
     "english": "İngilizce",
-    "turkish": "Türkçe"
+    "turkish": "Türkçe",
+    "Partly cloudy": "Parçalı Bulutlu",
+    "Light Rain":"Hafif Yağmurlu",
+    "Clear":"Açık",
+    "Sunny":"Güneşli",
+    "Mist":"Sisli",
+    "Light Rain And Snow Shower" : "Karla Karışık Hafif Yağmur",
+    "Fog":"Sis"
   }

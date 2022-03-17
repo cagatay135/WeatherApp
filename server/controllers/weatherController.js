@@ -7,7 +7,7 @@ const Location = db.location;
 
 // Request with location name (e.g. "London") and get latitude and longitude
 exports.getLocation = (req, res) => {
-  let name = req.query.name;
+  let name = req.query.name.toLocaleLowerCase();
   if (name != undefined) {
     axios
       .get(
