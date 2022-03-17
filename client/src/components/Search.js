@@ -173,10 +173,10 @@ function Search() {
                           </div>
                           <div className="col-md-8 col-sm-6">
                             <p className="fs-6 text-muted">
-                              {t("temperature")}
+                              {t("feels_like")}
                             </p>
                             <p className="fs-6 text-muted">
-                              {weatherInfo && weatherInfo.current.temperature}
+                              {weatherInfo && weatherInfo.current.feelslike}
                               &deg;
                             </p>
                           </div>

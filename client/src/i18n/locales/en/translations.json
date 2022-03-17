@@ -5,6 +5,7 @@
     "wind": "Wind",
     "uv_index": "UV Index",
     "temperature": "Temperature",
+    "feels_like": "Feels Like Temperature",
     "humidity": "Humidity",
     "created": "Created by",
     "english": "English",
