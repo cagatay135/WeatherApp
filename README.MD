@@ -39,7 +39,7 @@
   ```
 
 ### Configration 
-- Server (config/config.json)
+- Server (config/config.js)
     + Set your database credentials
     + Set mapbox api key
     + Set weatherstack api key
