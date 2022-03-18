@@ -15,6 +15,10 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.DECIMAL(11, 8),
         allowNull: false,
       },
+      location: {
+        type: DataTypes.STRING(),
+        allowNull: false,
+      },
       current_weather: {
         type: DataTypes.DECIMAL(3, 1),
         allowNull: false,

@@ -44,6 +44,7 @@ exports.getWeather = (req, res) => {
       Location.create({
         latitude: response.data.location.lat,
         longitude: response.data.location.lon,
+        location: response.data.location.name,
         current_weather: response.data.current.temperature,
       });
       res.send(response.data);
